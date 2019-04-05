@@ -1,0 +1,7 @@
+{
+  "name": "SMO",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

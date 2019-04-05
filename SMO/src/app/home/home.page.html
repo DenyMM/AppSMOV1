@@ -1,0 +1,212 @@
+
+<ion-header>
+  <ion-toolbar color="primary">
+  <ion-title>Sociedad Mexicana de Oftalmología</ion-title>
+  <div>
+    <!--<img id="logo" src="../assets/logoSMO/SMOlogo.jpg" alt="">-->
+  </div>
+  </ion-toolbar>
+</ion-header>
+<ion-content >
+  <div class="bodyApp">
+  <!--<ion-grid>
+    <ion-row class="UpMenu">
+      <ion-col>
+        <div>
+          <img src="{{imagen}}" alt="" srcset="" *ngFor="let imagen of Banners">
+        </div>
+      </ion-col>
+      <ion-col>
+      <div>
+      </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid-->
+<!--Banner-->
+  <ion-grid>
+    <ion-row>
+      <ion-col size="1">
+        <span class="slider-nav arrow-prev"
+          (click)="slidePrev(sliderOne,slideWithNav)">
+          <div class="prev-icon-custom custon-nav"
+            [class.disabled]="sliderOne.isBeginningSlide"></div>
+        </span>
+      </ion-col>
+      <ion-col size="10">
+
+        <ion-slides pager="true" [options]="slideOptsOne" #slideWithNav
+          (ionSlideDidChange)="SlideDidChange(sliderOne,slideWithNav)">
+          <ion-slide *ngFor="let s of sliderOne.slidesItems">
+            <img src="../../assets/banners/{{s.id}}.jpg">
+          </ion-slide>
+        </ion-slides>
+
+      </ion-col>
+      <ion-col size="1">
+        <span class="slider-nav arrow-next"
+          (click)="slideNext(sliderOne,slideWithNav)">
+          <div class="next-icon-custom custon-nav"
+            [class.disabled]="sliderOne.isEndSlide"></div>
+        </span>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!--Buttons-->
+  <ion-grid>
+    <ion-row  class="banOne">
+      <ion-col size="1">
+        <div>
+        </div>
+      </ion-col>
+      <ion-col size="3">
+        <div>
+          <ion-button size="large" routerLink="/course" color="default">
+            <ion-icon name="calendar"></ion-icon>
+          </ion-button>
+          <p id="butCour">
+          Cursos y Eventos
+          </p>
+        </div>
+      </ion-col>
+      <ion-col size="1">
+        <div>
+        </div>
+      </ion-col>
+      <ion-col size="3">
+       <div>
+         <ion-button size="large" routerLink="/areapub" color="default">
+            <ion-icon name="cloud-outline"></ion-icon>
+         </ion-button>
+         <p id="butArea">
+         Área Pública
+         </p>
+       </div>
+  </ion-col>
+  <ion-col size="1">
+    <div>
+    </div>
+  </ion-col>
+  <ion-col size=3>
+  <div>
+    <ion-button size="large" routerLink="" color="default">
+      <ion-icon name="paper"></ion-icon>
+    </ion-button>
+    <p id="butMag">
+    Revista
+    </p>
+</div>
+</ion-col>
+</ion-row>
+</ion-grid>
+
+<ion-grid>
+  <ion-row  class="bantwo">
+    <ion-col size="1">
+      <div>
+      </div>
+    </ion-col>
+    <ion-col size="3">
+      <div>
+        <ion-button size="large" routerLink="/oursmo" color="default">
+          <ion-icon name="briefcase"></ion-icon>
+        </ion-button>
+        <p id="butOur">
+        Nuestra SMO
+        </p>
+      </div>
+    </ion-col>
+    <ion-col size="1">
+      <div>
+      </div>
+    </ion-col>
+    <ion-col size="3">
+     <div>
+       <ion-button size="large" routerLink="/smonline" color="default">
+         <ion-icon name="globe"></ion-icon>
+       </ion-button>
+       <p id="butOnl">
+       SMO Online
+       </p>
+     </div>
+</ion-col>
+<ion-col size="1">
+  <div>
+  </div>
+</ion-col>
+<ion-col size=3>
+<div>
+  <ion-button size="large" routerLink="/paym" color="default">
+    <ion-icon name="card"></ion-icon>
+  </ion-button>
+  <p id="butPay">
+   Pago en linea
+  </p>
+</div>
+</ion-col>
+</ion-row>
+</ion-grid>
+
+<ion-grid>
+  <ion-row  class="banThr">
+    <ion-col size="1">
+      <div>
+      </div>
+    </ion-col>
+    <ion-col size="3">
+      <div>
+        <ion-button size="large" routerLink="/contact" color="default">
+          <ion-icon name="book"></ion-icon>
+        </ion-button>
+        <p id="butCont">
+        Contacto
+        </p>
+      </div>
+    </ion-col>
+    <ion-col size="1">
+      <div>
+      </div>
+    </ion-col>
+    <ion-col size="3">
+     <div>
+       <ion-button size="large" routerLink="/mailer" color="default">
+         <ion-icon name="mail-open"></ion-icon>
+       </ion-button>
+       <p id="butMailer">
+         Buzón
+       </p>
+     </div>
+</ion-col>
+<ion-col size="1">
+  <div>
+  </div>
+</ion-col>
+<ion-col size=3>
+<div>
+  <ion-button size="large" routerLink="/live" color="default">
+    <ion-icon name="tv"></ion-icon>
+  </ion-button>
+  <p id="butLive">
+  Transmisiones
+  </p>
+</div>
+</ion-col>
+</ion-row>
+</ion-grid>
+<ion-grid>
+  <ion-row>
+    <ion-col size="12">
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+
+</div>
+</ion-content>
